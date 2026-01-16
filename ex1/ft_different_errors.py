@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 def garden_operations(error_type: int) -> None:
+    """Demonstrate different Python exception types."""
     if error_type == 1:
         try:
             int("Hello")
@@ -36,6 +37,7 @@ def garden_operations(error_type: int) -> None:
 
 
 def test_error_types():
+    """Test exception types."""
     print("=== Garden Error Types Demo ===\n")
     print("Testing ValueError...")
     garden_operations(1)

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 def check_temperature(temp_str) -> None:
+    """Validate if a temperature is within 0-40°C range."""
     print(f"Testing temperature: {temp_str}")
     try:
         temp = int(temp_str)
@@ -15,6 +16,7 @@ def check_temperature(temp_str) -> None:
 
 
 def test_temperature_input() -> None:
+    """Test various inputs."""
     print("=== Garden Temperature Checker ===\n")
     check_temperature("25")
     check_temperature("abc")
