@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""Custom exception classes for garden-specific error handling."""
+
 
 class GardenError(Exception):
     """Base exception for all garden-related errors."""
@@ -27,7 +29,8 @@ def check_water_level(water_level: int) -> None:
         raise WaterError("Not enough water in the tank!")
 
 
-if __name__ == "__main__":
+def test_custom_errors():
+    """Test custom errors."""
     print("=== Custom Garden Errors Demo ===\n")
 
     print("Testing PlantError...")
@@ -54,3 +57,7 @@ if __name__ == "__main__":
         print(f"Caught a garden error: {e}")
 
     print("\nAll custom error types work correctly!")
+
+
+if __name__ == "__main__":
+    test_custom_errors()

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""Watering system demonstrating resource cleanup with finally block."""
+
 
 def water_plants(plant_list: list) -> None:
     """Water plants from list, ensuring cleanup with finally block."""
